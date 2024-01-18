@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <main class="frame">
+                <ul>
+                    <li><a href="#">.click()</a></li>
+                    <li><a href="#">.hide()</a></li>
+                    <li><a href="#">.show()</a></li>
+                    <li><a href="#">.toggle()</a></li>
+                    <li><a href="#">.slideDown()</a></li>
+                    <li><a href="#">.slideUp()</a></li>
+                    <li><a href="#">.slideToggle()</a></li>
+                    <li><a href="#">.fadeIn()</a></li>
+                    <li><a href="#">.fadeOut()</a></li>
+                    <li><a href="#">.addClass()</a></li>
+                    <li><a href="#">.before()</a></li>
+                    <li><a href="#">.after()</a></li>
+                    <li><a href="#">.append()</a></li>
+                    <li><a href="#">.html()</a></li>
+                    <li><a href="#">.attr()</a></li>
+                    <li><a href="#">.val()</a></li>
+                    <li><a href="#">.text()</a></li>
+                </ul>
+            <div class="article">
+                <h1>My Mini Documentation</h1>
+                <div class="cards">
+                    <h3>Click</h3>
+                    <input type="button" id="click" class="click btn" value=".click()">
+                    <p>Bind an event handler to the "click" event, or trigger that event on an element. Example: Click the button will display alert box</p>
+                </div>
+                <div class="cards">
+                    <h3>Hide</h3>
+                    <input type="button" id="hide" class="btn" value=".hide()">
+                    <p id="hide">Hide the matched elements. Example: Hiding a paragraph</p>
+                </div>
+                <div class="cards">
+                    <h3>Show</h3>
+                    <input type="button" id="show" class="btn" value=".show()">
+                    <p>Description: Display the matched elements. Example: Showing the Hidden Paragraph</p>
+                    <p id="show">Tadaaaaa! refresh the page to hide me again.</p>
+                </div>
+                <div class="cards">
+                    <h3>Toggle</h3>
+                    <input type="button" id="toggle" class="btn" value=".toggle()">
+                    <p>Display or hide the matched elements. Example: Display/Hide paragraph</p>
+                    <p id="toggle">hi!</p>
+                </div>
+                <div class="cards">
+                    <h3>SlideUp</h3>
+                    <input type="button" id="slideUp" class="btn" value=".slideUp()">
+                    <p>Hide the matched elements with a sliding upward motion. Example: Hiding a paragraph in sliding motion</p>
+                    <p id="slideUp">hi!</p>
+                </div>
+                <div class="cards">
+                    <h3>SlideDown</h3>
+                    <input type="button" id="slideDown" class="btn" value=".slideDown()">
+                    <p>Hide the matched elements with a sliding downward motion. Example: Hiding a paragraph in sliding motion</p>
+                    <p id="slideDown">hi!</p>
+                </div>
+                <div class="cards">
+                    <h3>SlideToggle</h3>
+                    <input type="button" id="slideToggle" class="btn" value=".slideToggle()">
+                    <p>Display or hide the matched elements with a sliding motion. Example: Slide motion while hiding/showing a paragraph.</p>
+                    <p id="slideToggle">hi!</p>
+                </div>
+                <div class="cards">
+                    <h3>FadeIn</h3>
+                    <input type="button" id="fadeIn" class="btn" value=".fadeIn()">
+                    <p>Display the matched elements by fading them to opaque. Example: Fading In a hidden paragraph</p>
+                    <p id="fadeIn">hi!</p>
+                </div>
+                <div class="cards">
+                    <h3>FadeOut</h3>
+                    <input type="button" id="fadeOut" class="btn" value=".fadeOut()">
+                    <p>Description: Hide the matched elements by fading them to transparent. Example: fading out a paragraph into transparent.</p>
+                    <p id="fadeOut">hi!</p>
+                </div>
+                <div class="cards">
+                    <h3>AddClass</h3>
+                    <input type="button" id="addClass" class="btn" value=".addClass()">
+                    <p>Adds the specified class(es) to each element in the set of matched elements. Example: click to make and add class of blue to the paragraph below.</p>
+                    <p id="addClass">hi!</p>
+                </div>
+                <div class="cards">
+                    <h3>Before</h3>
+                    <input type="button" id="before" class="btn" value=".before()">
+                    <p>Insert content, specified by the parameter, before each element in the set of matched elements. Example: Click the button to add before into the paragraph word hi!.</p>
+                    <p id="before">hi!</p>
+                </div>
+                <div class="cards">
+                    <h3>After</h3>
+                    <input type="button" id="after" class="btn" value=".after">
+                    <p>Insert content, specified by the parameter, after each element in the set of matched elements. Example: Click the button to add content after the paragraph word hi!</p>
+                    <p id="after">hi!</p>
+                </div>
+                <div class="cards">
+                    <h3>Append</h3>
+                    <input type="button" id="append" class="btn" value=".append">
+                    <p>Insert content, specified by the parameter, to the end of each element in the set of matched elements. Example: Click the button to add a strong strong word at the end off all paragraph.</p>
+                    <p id="append">hi!</p>
+                </div>
+                <div class="cards">
+                    <h3>html</h3>
+                    <input type="button" id="html" class="btn" value=".html()">
+                    <p>Get the HTML contents of the first element in the set of matched elements. Example: Click the button to change the content of all paragraph element into a blue color with Hello and Again (bold) text.</p>
+                    <p id="html">hi!</p>
+                </div>
+                <div class="cards">
+                    <h3>Attr</h3>
+                    <input type="button" id="attr" class="btn" value=".attr()">
+                    <p>Get the value of an attribute for the first element in the set of matched elements. Example: Getting the attrible of the first paragraph color class that matched in the element paraments</p>
+                    <p id="attr">hi, click the button to add blue in my class attribute!</p>
+                </div>
+                <div class="cards">
+                    <h3>Val</h3>
+                    <input type="button" id="btnval" class="btn" value=".val()">
+                    <p>Get the current value of the first element in the set of matched elements or set the value of every matched element. Example: Type some text and then click the .val() button, it will replace it into toUpperCase text. </p>
+                    <input id="val"></input>
+                </div>
+                <div class="cards">
+                    <h3>Text</h3>
+                    <input type="button" id="btntext" class="btn" value=".text()">
+                    <p>Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements. Example: click the button and it will replace the text on the paragraph as WASSUP!</p>
+                    <p id="text">hi!</p>
+                </div>
+            </div>
+        </main>
+        <script>
+        $( "#click" ).on( "click", function() {
+        alert( "You clicked the button" );
+        } );
+
+        $( "#hide" ).on( "click", function() {
+        $( "p#hide" ).hide( "slow");});
+
+        $( "#show" ).on( "click", function() {
+        $( "p#show" ).show( "slow",);});
+
+        $( "#toggle" ).on( "click", function() {
+        $("p#toggle" ).toggle();})
+
+        $( "#slideUp" ).on("click", function() {
+            $( "p#slideUp" ).slideUp();})
+        
+        $( "#slideDown" ).on( "click", function () {
+        if ( $( "#slideDown" ).first().is( ":visible" ) ) {
+        $( "p#slideDown" ).hide( "slow" );
+        }   else {
+        $( "p#slideDown" ).visible();}
+        });    
+
+        $( "#slideToggle" ).on("click", function() {
+            $( "p#slideToggle" ).slideToggle();})
+
+        $( "#fadeIn" ).on("click", function() {   
+        $( "p#fadeIn" ).first().fadeIn( "slow" )
+        });    
+            
+        $( "#fadeOut" ).on("click", function() {
+            $( "p#fadeOut" ).fadeOut();})
+        
+        $( "#addClass" ).on("click", function() {
+        $( "p#addClass" ).addClass("blue");
+        });
+        
+        $( "#before" ).on("click", function() {
+        $( "p#before" ).before("<p>lol </p>");
+        });
+
+        $( "#after" ).on("click", function() {
+        $( "p#after" ).after("<p> lol</p>");
+        });
+
+        $( "#append" ).on("click", function() {
+        $( "p" ).append("<strong>strong</strong>" )
+        });
+            
+        $( "#html" ).on("click", function() {
+        $( "p" ).html( "<span class='blue'> Hello <b>Again </b> </span>")
+        });
+
+        $( "#attr" ).on("click", function() {
+        $("p#attr").attr({class:"",class:"blue"})
+        });
+        
+        $( "#btnval" ).on("click" , function() {
+        $( "#val" ).val(function( i, val ) {
+            return val.toUpperCase();
+        })
+        });
+
+        $( "#btntext" ).on("click", function() {
+            $( "#text" ).text("WASSUP!");})
+        
+        </script>
+    </body>
+</html>
